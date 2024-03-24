@@ -161,7 +161,7 @@ exports.deleteProduct =catchAsyncErrors (async(req,res)=>{
      await cloudinary.v2.uploader.destroy(product.images[i].public_id);
     }
 
-    await product.removeOne(); //Use deleteOne method instead of remove
+   await product.deleteOne(); //Use deleteOne method instead of remove
 
     res.status(200).json({
         success:true,

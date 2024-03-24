@@ -57,7 +57,6 @@ import { useAlert } from "react-alert";
      <ProductCard key={product._id} product={product} />
      ))}
 
-   
   </div>
    </Fragment>
    )}
